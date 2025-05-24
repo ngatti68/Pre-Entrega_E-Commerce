@@ -1,0 +1,103 @@
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.producto-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  background: #fff;
+  transition: transform 0.2s;
+}
+
+.producto-card:hover {
+  transform: scale(1.05);
+}
+
+.producto-imagen {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  border-radius: 10px;
+}
+
+.botones-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.producto-card button {
+  background: #3498db;
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+
+}
+
+.producto-card button:hover {
+  background: #2980b9;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mensaje-container {
+  text-align: center;
+}
+
+.mensaje {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.mensaje-exito {
+  background: #4CAF50;
+  color: white;
+}
+
+.mensaje-error {
+  background: #FF5733;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .productos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .productos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .productos-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,95 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #7f8c8d;
+  color: white;
+  position: relative;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #f1c40f;
+}
+
+nav a.active-link {
+  font-weight: bold;
+  color: #f1c40f;
+  text-decoration: underline;
+}
+
+.carrito-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.carrito-dropdown {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 250px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: none; 
+}
+
+.carrito-container:hover .carrito-dropdown {
+  display: block; 
+}
+
+.carrito-dropdown ul {
+  list-style: none;
+  padding: 0;
+}
+
+.carrito-dropdown li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.carrito-dropdown p {
+  font-size: 16px;
+  color: #777;
+  text-align: center;
+}
+
+.boton-carrito {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+
+}
+
+.boton-carrito i {
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.boton-carrito i.fa-times {
+  color: red;
+}
+
+.boton-carrito i.fa-chevron-down {
+  transform: rotate(0deg);
+}
+
+.boton-carrito:hover i.fa-chevron-down {
+  transform: rotate(-180deg);
+}

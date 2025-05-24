@@ -1,0 +1,13 @@
+.footer {
+    text-align: center;
+    background: #7f8c8d;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .contenedor-principal {
+    padding-bottom: 70px; /* Espacio para que el contenido no quede debajo del footer */
+  }

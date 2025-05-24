@@ -1,0 +1,76 @@
+.carrito-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 20px;
+  top: 100px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 400px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carrito-producto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  gap: 10px;
+
+}
+
+.carrito-input {
+  width: 50px;
+  text-align: center;
+}
+
+.carrito-container h3 {
+  text-align: right;
+  margin-top: 15px;
+}
+
+.boton-estilizado {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.boton-estilizado:hover {
+  background-color: #0056b3;
+}
+
+.boton-eliminar {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.boton-eliminar:hover {
+  background-color: #a71d2a;
+}
+
+.boton-vaciar {
+  margin-top: 10px;
+  width: 100%;
+  /* Que ocupe toda la línea */
+}
+
+.boton-eliminar:hover {
+  background-color: #a71d2a;
+}
+
+.boton-vaciar {
+  margin-top: 10px;
+  width: 100%;
+}
